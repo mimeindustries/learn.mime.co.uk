@@ -5,7 +5,7 @@ layout: doc
 tags:
   - Collision Detection
   - Addons
-hardware: v1
+hardware: mirobot-v1
 type: instruction
 level: intermediate
 ---

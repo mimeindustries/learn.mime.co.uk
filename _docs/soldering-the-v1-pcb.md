@@ -6,7 +6,7 @@ tags:
   - Building
   - PCB
   - Soldering
-hardware: v1
+hardware: mirobot-v1
 type: instruction
 level: core
 ---

@@ -22,15 +22,14 @@ layout: default
   </div>
   <div id="doc">
     <h1>{{ page.title }}</h1>
-    <p class="hw-warning">This document is relevant
-    {% if page.hardware == 'v1' %}
-    only for the v1 hardware. Please make sure you are using this version (v1 has pegs, v2 doesn't)
-    {% elsif page.hardware == 'v2' %}
-    only for the v2 hardware. Please make sure you are using this version (v1 has pegs, v2 doesn't)
-    {% elsif page.hardware == 'all' %}
-    for all hardware versions.
-    {% endif %}
-    <p>
+    <div class="hw-warning">
+    <p>This document is relevant only for the following hardware:</p>
+    <ul>
+    {% for hw in page.hardware %}
+      <li>{{ hw }}</li>
+    {% endfor %}
+    </ul>
+    </div>
   {{ content }}
   <script>
 

@@ -5,7 +5,7 @@ layout: doc
 tags:
   - Building
   - Chassis
-hardware: v2
+hardware: mirobot-v2
 type: instruction
 level: core
 ---

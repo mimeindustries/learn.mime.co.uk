@@ -6,7 +6,7 @@ tags:
   - Network
   - WiFi
   - Configuration
-hardware: v2
+hardware: mirobot-v2
 type: instructions
 level: beginner
 ---

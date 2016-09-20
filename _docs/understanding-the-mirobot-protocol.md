@@ -5,7 +5,9 @@ layout: doc
 tags:
   - Protocol
   - JSON
-hardware: all
+hardware:
+  - mirobot-v1
+  - mirobot-v2
 type: documentation
 level: advanced
 ---

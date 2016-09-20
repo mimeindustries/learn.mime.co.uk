@@ -5,7 +5,7 @@ layout: doc
 tags:
   - Line Following
   - Addons
-hardware: v2
+hardware: mirobot-v2
 type: instruction
 level: intermediate
 ---

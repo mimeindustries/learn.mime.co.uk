@@ -6,7 +6,9 @@ tags:
   - Setup
   - Using
   - Drawing
-hardware: all
+hardware:
+  - mirobot-v1
+  - mirobot-v2
 type: instruction
 level: core
 ---

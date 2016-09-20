@@ -1,6 +1,6 @@
-<div class="doc level-{{ doc.level }} type-{{ doc.type }}{% for hw in doc.hardware %} hw-{{ hw }}{% endfor %}" data-tags="{% for tag in doc.tags %}{{ tag | downcase }}|{% endfor %}">
+<div class="doc level-{{ doc.level }} type-{{ doc.type }}" data-hw="{% for hw in doc.hardware %}{{ hw }}|{% endfor %}" data-tags="{% for tag in doc.tags %}{{ tag | downcase }}|{% endfor %}">
   <a class="icon" href="{{ doc.url }}" style="background-image:url('/assets{{ doc.url }}icon.jpg')">&nbsp</a>
-  <span class="hw meta">{{ doc.hardware }}</span>
+  <span class="hw meta">{% for hw in doc.hardware %}{{ hw }} {% endfor %}</span>
   <a href="{{ doc.url }}"><h2>{{ doc.title }}</h2></a>
   <p>{{ doc.summary }}</p>
   <span class="level meta">{{ doc.level | capitalize }}</span>

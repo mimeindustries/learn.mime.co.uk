@@ -4,7 +4,7 @@ summary: This guide will help you get the firmware on Mirobot up to date
 layout: doc
 tags:
   - Firmware
-hardware: v2
+hardware: mirobot-v2
 type: instructions
 level: beginner
 ---

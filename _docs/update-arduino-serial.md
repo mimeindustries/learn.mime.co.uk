@@ -8,7 +8,9 @@ tags:
   - Firmware
   - Serial
 type: instruction
-hardware: all
+hardware:
+  - mirobot-v1
+  - mirobot-v2
 level: intermediate
 ---
 

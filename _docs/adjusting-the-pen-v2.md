@@ -5,7 +5,7 @@ layout: doc
 tags:
   - Drawing
   - Using
-hardware: v2
+hardware: mirobot-v2
 type: instruction
 level: basic
 ---

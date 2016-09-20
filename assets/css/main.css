@@ -178,12 +178,12 @@ a:visited{color:#999}
 }
 
 #type-filter a.selected{
-  background-color:#F1BE48;
+  background-color:#00A3E0;
 }
 #type-filter a.unselected{
-  border:2px solid #F1BE48;
+  border:2px solid #00A3E0;
   padding:4px;
-  color:#F1BE48;
+  color:#00A3E0;
 }
 
 #level-filter a.selected{
@@ -196,12 +196,12 @@ a:visited{color:#999}
 }
 
 #tag-filter a.selected{
-  background-color:#00A3E0;
+  background-color:#1B365D;
 }
 #tag-filter a.unselected{
-  border:2px solid #00A3E0;
+  border:2px solid #1B365D;
   padding:4px;
-  color:#00A3E0;
+  color:#1B365D;
 }
 
 #tag-filter .count{
@@ -209,18 +209,18 @@ a:visited{color:#999}
 }
 
 #hw-filter a.selected{
-  background-color:#1B365D;
+  background-color:#F1BE48;
 }
 #hw-filter a.unselected{
-  border:2px solid #1B365D;
+  border:2px solid #F1BE48;
   padding:4px;
-  color:#1B365D;
+  color:#F1BE48;
 }
 
-.doc .type.meta, a.type{background-color:#F1BE48}
+.doc .type.meta, a.type{background-color:#00A3E0}
 .doc .level.meta, a.level{background-color:#FF8200}
-.doc .hw.meta, a.hw{background-color:#1B365D}
-a.tag{background-color:#00A3E0}
+.doc .hw.meta, a.hw{background-color:#F1BE48}
+a.tag{background-color:#1B365D}
 
 .doc .meta{
   display: inline-block;
@@ -341,9 +341,18 @@ table th{
   background-color:#EEE;
 }
 
-p.hw-warning{
+.hw-warning{
   font-weight:bold;
+  padding:10px;
+  background:#EEE;
 }
+.hw-warning ul, .hw-warning p{
+  margin:3px 0;
+}
+.hw-warning ul li{
+  padding:6px 0;
+}
+
 
 @media all and (max-width: 1060px) {
   #docpage #sidebar{

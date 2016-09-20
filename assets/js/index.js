@@ -1,20 +1,31 @@
 var hidden = [];
 var tags = [];
+var hw = [];
 
 var docHidden = function(doc){
+  // Check the tags
   if(tags.length > 0){
     var docTags = doc.getAttribute("data-tags").split('|');
     var hide = true;
     for(var tag in tags){
       if(docTags.indexOf(tags[tag]) > -1){
-        console.log('found tag');
         hide = false;
       }
     }
-    if(hide){
-      return true;
-    }
+    if(hide) return true;
   }
+  // Check the hardware tags
+  if(hw.length > 0){
+    var docTags = doc.getAttribute("data-hw").split('|');
+    var hide = true;
+    for(var tag in hw){
+      if(docTags.indexOf(hw[tag]) > -1){
+        hide = false;
+      }
+    }
+    if(hide) return true;
+  }
+  // See if it's hidden
   for(var d in hidden){
     if(doc.className.indexOf(hidden[d]) > -1){
       return true;
@@ -39,6 +50,7 @@ var setUrl = function(){
   var url = [];
   if(hidden.length > 0) url.push("hidden=" + hidden.join('|'));
   if(tags.length > 0) url.push("tags=" + tags.join('|'));
+  if(hw.length > 0) url.push("hw=" + hw.join('|'));
   if(url.length === 0){
     history.replaceState({}, document.title, '/');
   }else{
@@ -46,21 +58,21 @@ var setUrl = function(){
   }
 }
 
-var enumFilter = function(e){
-  if(this.className == "selected"){
-    hidden.push(this.getAttribute("data-filter"));
-    this.className = "unselected";
+var enumFilter = function(e, list){
+  if(e.srcElement.className == "selected"){
+    list.push(e.srcElement.getAttribute("data-filter"));
+    e.srcElement.className = "unselected";
   }else{
-    var i = hidden.indexOf(this.getAttribute("data-filter"));
-    if(i != -1) { hidden.splice(i, 1); }
-    this.className = "selected";
+    var i = list.indexOf(e.srcElement.getAttribute("data-filter"));
+    if(i != -1) { list.splice(i, 1); }
+    e.srcElement.className = "selected";
   }
   filterDocs();
   return false;
 }
 
-var tagFilter = function(e){
-  var siblings = this.parentElement.getElementsByTagName('a');
+var tagFilter = function(e, list){
+  var siblings = e.srcElement.parentElement.getElementsByTagName('a');
   var first_click = true;
   for(var i=0; i< siblings.length; i++){
     if(siblings[i].className !== 'selected'){
@@ -73,20 +85,29 @@ var tagFilter = function(e){
     for(var i=0; i< siblings.length; i++){
       siblings[i].className = 'unselected';
     }
-    this.className = 'selected';
-    tags.push(this.getAttribute("data-filter"));
+    e.srcElement.className = 'selected';
+    list.push(e.srcElement.getAttribute("data-filter"));
   }else{
     // toggle this tag
-    if(this.className == "selected"){
-      var i = tags.indexOf(this.getAttribute("data-filter"));
-      if(i != -1) { tags.splice(i, 1); }
-      this.className = "unselected";
+    if(e.srcElement.className == "selected"){
+      var i = list.indexOf(e.srcElement.getAttribute("data-filter"));
+      if(i != -1) { list.splice(i, 1); }
+      e.srcElement.className = "unselected";
     }else{
-      tags.push(this.getAttribute("data-filter"));
-      this.className = "selected";
+      list.push(e.srcElement.getAttribute("data-filter"));
+      e.srcElement.className = "selected";
     }
   }
-  if(tags.length === 0){
+  
+  // Generate the list
+  list.length = 0;
+  var selected = e.srcElement.parentElement.querySelectorAll('a.selected');
+  for(var i = 0; i < selected.length; i++){
+    list.push(selected[i].getAttribute("data-filter"));
+  };
+  
+  // Select all if all are unselected
+  if(list.length === 0){
     for(var i=0; i< siblings.length; i++){
       siblings[i].className = 'selected';
     }
@@ -95,13 +116,14 @@ var tagFilter = function(e){
   return false;
 }
 
-var setupFilter = function(type, fn, enabledFn){
+var setupFilter = function(type, fn, list, enabledFn){
   var links = document.querySelectorAll("#" + type + " a");
   for(var i=0; i<links.length; i++){
-    links[i].onclick = fn;
-    links[i].className = enabledFn(links[i]) ? "selected" : "unselected";
+    links[i].onclick = function(e){ fn(e, list) };
+    links[i].className = enabledFn(links[i], list) ? "selected" : "unselected";
   }
 }
+
 var parseUrl = function(){
   if(window.location.hash.length <= 1) return;
   var params = window.location.hash.replace('#', '').split('&').map(function(p){
@@ -123,12 +145,12 @@ var filterLinkEnabled = function(link){
   }
 }
 
-var tagLinkEnabled = function(link){
-  if(tags.length == 0){
+var tagLinkEnabled = function(link, list){
+  if(list.length == 0){
     return true;
   }else{
-    for(var i = 0; i< tags.length; i++){
-      if(link.getAttribute('data-filter').indexOf(tags[i]) > -1){
+    for(var i = 0; i< list.length; i++){
+      if(link.getAttribute('data-filter').indexOf(list[i]) > -1){
         return true;
       }
     }
@@ -138,10 +160,10 @@ var tagLinkEnabled = function(link){
 
 var setupFilters = function(){
   parseUrl();
-  setupFilter('type-filter', enumFilter, filterLinkEnabled);
-  setupFilter('level-filter', enumFilter, filterLinkEnabled);
-  setupFilter('tag-filter', tagFilter, tagLinkEnabled);
-  setupFilter('hw-filter', enumFilter, filterLinkEnabled);
+  setupFilter('type-filter', enumFilter, hidden, filterLinkEnabled);
+  setupFilter('level-filter', enumFilter, hidden, filterLinkEnabled);
+  setupFilter('tag-filter', tagFilter, tags, tagLinkEnabled);
+  setupFilter('hw-filter', tagFilter, hw, tagLinkEnabled);
   filterDocs();
 }
 

@@ -5,7 +5,9 @@ layout: doc
 tags:
   - Challenge
   - Drawing
-hardware: all
+hardware:
+  - mirobot-v1
+  - mirobot-v2
 type: challenge
 level: beginner
 ---

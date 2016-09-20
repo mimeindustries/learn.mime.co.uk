@@ -5,7 +5,9 @@ layout: doc
 tags:
   - Help
   - Troubleshooting
-hardware: all
+hardware:
+  - mirobot-v1
+  - mirobot-v2
 type: troubleshooting
 level: core
 ---

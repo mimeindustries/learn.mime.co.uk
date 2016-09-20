@@ -6,7 +6,7 @@ tags:
   - Building
   - Schools
   - Lesson Plan
-hardware: v1
+hardware: mirobot-v1
 type: lesson-plan
 level: beginner
 ---
