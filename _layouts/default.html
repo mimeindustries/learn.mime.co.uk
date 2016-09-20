@@ -22,9 +22,9 @@
         <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, user-scalable=no">
         <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="/assets/css/main.css">
-        {% if page.url == '/index.html' %}
-          <script type="text/javascript" src="/assets/js/index.js"></script>
+        {% stylesheet main.css %}
+        {% if page.url == '/' %}
+          {% javascript index.js %}
         {% endif %}
         {% if page.stylesheets %}
           {% for sheet in page.stylesheets %}
@@ -32,7 +32,7 @@
           {% endfor %}
         {% endif %}
     </head>
-    <body{% if page.url == "/index.html" %} id="home"{% endif %}>
+    <body{% if page.url == "/" %} id="home"{% endif %}>
 
       <div id="header">
         <div class="centre">

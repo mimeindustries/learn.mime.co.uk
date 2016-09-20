@@ -11,6 +11,14 @@ exclude:
  - README.md
  - bin
  - vendor
-
-# Build settings
-markdown: kramdown
+gems:
+ - jekyll-assets
+assets:
+  compress:
+    css: false
+    js: false
+  prefix: "/assets"
+  digest: true
+  sources:
+    - _assets/js
+    - _assets/css

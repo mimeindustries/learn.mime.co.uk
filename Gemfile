@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 2.5.1'
-#gem 'redcarpet'
+gem 'jekyll'
 gem 's3_website'
-gem 'jekyll-asset-pipeline'
-gem 'yui-compressor'
+gem 'jekyll-assets'
+gem 'uglifier'
+gem 'jekyll-paginate'
 gem 'html-proofer'
