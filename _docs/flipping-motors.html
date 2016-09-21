@@ -1,0 +1,69 @@
+---
+title: Flipping Motors
+summary: Flip the motors to fix an issue with Mirobot going backwards
+layout: doc
+tags:
+  - Fix
+hardware: mirobot-v2
+type: instruction
+level: intermediate
+fontpage: false
+---
+<style>
+.cal{
+  background-color:#EEE;
+  border: 1px solid;
+  padding:5px;
+}
+.connected .cal{
+  background-color:#cfffd1;
+  border-color: #a9fdad;
+  color:#000;
+}
+.disconnected .cal{
+  background-color:#EEE;
+  border-color: #DDD;
+  color:#999;
+}
+.connected .cal input{
+  color:#000;
+}
+.disconnected .cal input{
+  color:#999;
+}
+#init, #init input{
+  color:#000;
+}
+#init input{
+  width:200px;
+}
+#distance input, #turn input{
+  width:40px;
+}
+#init div{
+  display:inline-block;
+}
+.hidden{
+  display:none !important;
+}
+</style>
+<p>Unfortunately some Mirobots went out with incorrectly wired stepper motors. Fortunately the fix for this can be done in software by following these instructions:</p>
+
+<h2>Step one: Update the Arduino firmware on your Mirobot</h2>
+<p>You will need to be running Arduino firmware v2.0.9 or above for this fix to work. <a href="../update-firmware-v2/">Instructions for updating your firmware are here</a></p>
+
+<h2>Step two: Connect to your Mirobot</h2>
+<p>Click here to connect to your Mirobot:</p>
+<div id="init" class="cal">
+  Network address: <input type="text" id="manualAddress" class="hidden" value=""/><select id="autoAddress" class="hidden"></select> <button id="connect">Connect</button>
+  <span class="message"> </span>
+</div>
+
+<h2>Step three: Flip the motors</h2>
+<p>Click here to flip the motors:</p>
+<div class="cal connectrequired" id="flipper">
+  <span class="message"></span> <button class="flip" disabled="disabled">Flip Motors</button>
+</div>
+
+<script src="http://apps.mirobot.io/assets/js/mirobot.js"></script>
+<script src="/assets/docs/flipping-motors/flip.js"></script>

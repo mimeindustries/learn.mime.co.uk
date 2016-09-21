@@ -15,6 +15,9 @@ level: core
 v2 Hardware Troubleshooting
 ---------------------------
 
+### My Mirobot runs backwards
+A number of units were sent out with badly wired motors before we realised there was an issue. Fortunately the fix for this can be easily done in software. [Go to this page for more details](../flipping-motors/).
+
 ### I can't connect to the Mirobot WiFi network
 Early versions of the firmware had a problem with connecting to the Mirobot access point for some devices. If you have access to a Windows or Android device please try using that to access it and then make it join your network. Once you've got it on your network you can update the firmware which should solve this problem. If you are unable to get it on your network, please email [info@mirobot.io](mailto:info@mirobot.io) to arrange for a replacement.
 
