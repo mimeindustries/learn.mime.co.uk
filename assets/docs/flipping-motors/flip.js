@@ -7,6 +7,7 @@ function click(el, fn){
 }
 
 function Flipper(){
+  var self = this;
   this.mirobot = new Mirobot();
   this.updateConnectionState();
   this.setupInit();
