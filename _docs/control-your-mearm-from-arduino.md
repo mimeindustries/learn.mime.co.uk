@@ -7,7 +7,7 @@ tags:
   - Arduino
 hardware: mearm
 type: instruction
-level: basic
+level: core
 ---
 
 The MeArm should be fun to build and easy to control. We've spent a lot of time putting together instructions for building and controlling the MeArm. We advise that you work out and test how to control your Servo Motors before constructing your MeArm. It will save you time and frustration, and lessen the chance that your MeArm will just be something cool to sit on your shelf.
