@@ -19,15 +19,15 @@ v2 Hardware Troubleshooting
 A number of units were sent out with badly wired motors before we realised there was an issue. Fortunately the fix for this can be easily done in software. [Go to this page for more details](../flipping-motors/).
 
 ### I can't connect to the Mirobot WiFi network
-Early versions of the firmware had a problem with connecting to the Mirobot access point for some devices. If you have access to a Windows or Android device please try using that to access it and then make it join your network. Once you've got it on your network you can update the firmware which should solve this problem. If you are unable to get it on your network, please email [info@mirobot.io](mailto:info@mirobot.io) to arrange for a replacement.
+Early versions of the firmware had a problem with connecting to the Mirobot access point for some devices. If you have access to a Windows or Android device please try using that to access it and then make it join your network. Once you've got it on your network you can update the firmware which should solve this problem. If you are unable to get it on your network, please email [support@mime.co.uk](mailto:support@mime.co.uk) to arrange for a replacement.
 
 ### I'm having problems updating the firmware
-If the firmware update doesn't seem to be doing anything, please try using the Chrome browser. If it still doesn't seem to be working, email [info@mirobot.io](mailto:info@mirobot.io) for help.
+If the firmware update doesn't seem to be doing anything, please try using the Chrome browser. If it still doesn't seem to be working, email [support@mime.co.uk](mailto:support@mime.co.uk) for help.
 
 ### What do the flashing lights mean?
 There are three lights on the v2 Mirobot:
 
- - A red LED on the Arduino which shoul dbe constantly on - this means there is power to the board
+ - A red LED on the Arduino which should be constantly on - this means there is power to the board
  - A red LED which should give a double flash that means the Arduino is running
  - A blue LED on the WiFi module which should flash briefly when the power is turned on and then occasionally after that
 
