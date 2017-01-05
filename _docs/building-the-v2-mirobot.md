@@ -208,7 +208,7 @@ Put 4 AA batteries into the battery holder and turn on Mirobot. You should see a
 
 Join this network and once it has successfully connected you can visit [http://local.mirobot.io](http://local.mirobot.io) in your web browser.
 
-This should load a web page which lets you drag and drop commands to program Mirobot. Once you've had some fun with this, you can join it to your existing wifi network by clicking on "Configure WiFi" in red at the top right of the web page and enter the information requested. For more details on this procedure [see our guide](docs/get-mirobot-on-the-network/).
+This should load a web page which lets you drag and drop commands to program Mirobot. Once you've had some fun with this, you can join it to your existing wifi network by clicking on "Configure WiFi" in red at the top right of the web page and enter the information requested. For more details on this procedure [see our guide](/docs/get-mirobot-on-the-network).
 
 When it's on your network, take a look at [Mirobot Apps](http://apps.mirobot.io) to explore more things to do with Mirobot. Here are some [challenges](/#tags=challenge) to keep you busy!
 
@@ -216,4 +216,4 @@ When it's on your network, take a look at [Mirobot Apps](http://apps.mirobot.io)
 Troubleshooting
 --------------
 
-If you have any problems with your Mirobot checkout our [troubleshooting guide](/docs/troubleshooting-guide/) which covers most common issues (and a few uncommon ones too!).
+If you have any problems with your Mirobot checkout our [troubleshooting guide](/docs/troubleshooting-guide) which covers most common issues (and a few uncommon ones too!).
