@@ -26,18 +26,19 @@ a.tag{background-color:$mime-dark-blue}
 
 #sidebar{
   float:right;
+  background:#FAFAFA;
 }
 
 #doc, #sidebar{
   padding:25px 45px 45px 15px;
   display:inline-block;
   vertical-align: top;
-  background-color:#FFF;
 }
 
 #doc{
   width:700px;
   position:relative;
+  background:#FFF;
   
   img{
     margin:10px 0;
@@ -122,5 +123,25 @@ table th{
   }
   ul li{
     padding:6px 0;
+  }
+}
+
+body.wide{
+  #docpage{
+    #sidebar{
+      float:left;
+      width:1000px;
+      padding:15px;
+    }
+    #sidebar h3, #sidebar div{
+      display:inline-block;
+    }
+    .centre{
+    }
+    #doc{
+      padding:15px;
+      margin:10px 0 0 10px;
+      width:1000px;
+    }
   }
 }

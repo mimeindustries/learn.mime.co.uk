@@ -34,7 +34,7 @@
           {% endfor %}
         {% endif %}
     </head>
-    <body{% if page.url == "/" %} id="home"{% endif %}>
+    <body{% if page.url == "/" %} id="home"{% endif %}{% if page.bodyclass %} class="{{page.bodyclass}}"{% endif %}>
 
       <div id="header">
         <div class="centre">

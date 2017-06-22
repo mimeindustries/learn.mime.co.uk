@@ -2,6 +2,7 @@
 title: Building the MeArm Pi
 summary: The video guide for building the MeArm Pi
 layout: video
+bodyclass: wide
 frontpage: false
 tags:
   - Video
