@@ -38,13 +38,19 @@ var videoInstruction = function(conf){
       }
     }
   }
-  
+
+  this.scrollChapters = function(step){
+    var topPos = this.steps.querySelector('.step' + step).offsetTop;
+    this.steps.querySelector('ul').scrollTop = topPos;
+  }
+
   this.gotoStep = function(step, play){
     if(loopDelay) window.clearTimeout(loopDelay);
     this.shouldLoop ? showCtrls('loop') : hideAllCtrls();
     this.currentStep = step;
     this.video.currentTime = this.times[step] + 0.1;
     this.displayStep(step);
+    this.scrollChapters(step);
     if(play) this.video.play();
   }
   
