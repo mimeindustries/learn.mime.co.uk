@@ -13,6 +13,20 @@
   #docpage #doc{
     margin:10px 0 0 10px;
   }
+  body.wide{
+    #docpage #sidebar{
+      margin:0 10px;
+      width:auto !important;
+    }
+    #docpage.centre{
+      width:100%;
+    }
+    #docpage #doc{
+      margin:10px 10px 0 10px;
+      width:auto !important;
+    }
+  }
+
 }
 
 @media all and (max-width: 780px) {
