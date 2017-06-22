@@ -1,0 +1,80 @@
+---
+layout: doc
+---
+
+<div class="videoInstruction">
+  <div class="flex">
+    <div class="steps">
+      <h3>Steps</h3>
+      <ul>
+      {% for step in page.videosteps %}
+        <li data-step="{{forloop.index0}}" data-time="{{step.time}}" class="step{{forloop.index0}}">#{{forloop.index}} {{step.title}}</li>
+      {% endfor %}
+      </ul>
+    </div>
+    <div class="video">
+      <video>
+        <source src='{{ page.videofile }}' type='video/mp4'>
+      </video>
+      <div class="controls">
+        <button class="start">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.837 27.794">
+            <path fill="#FFF" d="M2.837,27.794c-0.96,0-1.896-0.488-2.429-1.37c-0.809-1.34-0.378-3.083,0.962-3.892l14.182-8.561 L1.352,5.25C0.018,4.431-0.4,2.686,0.419,1.352C1.239,0.018,2.985-0.4,4.318,0.419l18.167,11.158 c0.843,0.518,1.355,1.438,1.352,2.426c-0.004,0.989-0.523,1.905-1.37,2.416L4.3,27.386C3.842,27.663,3.336,27.794,2.837,27.794z"/>
+          </svg>
+          <span>Start</span>
+        </button>
+        <button class="back">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.837 27.794">
+            <path fill="#FFF" d="M20.999,27.794c-0.506,0-1.018-0.136-1.48-0.42L1.351,16.217C0.508,15.7-0.004,14.78,0,13.791 c0.003-0.989,0.523-1.905,1.37-2.416L19.537,0.408c1.34-0.809,3.083-0.379,3.892,0.962c0.809,1.34,0.379,3.083-0.962,3.892 L8.285,13.823l14.2,8.722c1.334,0.819,1.751,2.564,0.932,3.898C22.882,27.314,21.952,27.794,20.999,27.794z"/>
+          </svg>
+          <span>Back</span>
+        </button>
+        <button class="repeat">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 33.44 28.112">
+            <path fill="#FFF" d="M32.647,17.297C30.351,7.113,23.862,0,16.869,0C10.616,0,5.174,5.575,2.229,14.932L0,14.366l3.735,6.277 l6.278-3.734l-2.282-0.58c2.116-6.5,5.654-10.66,9.138-10.66c3.61,0,8.431,4.816,10.247,12.875c0.298,1.317,1.467,2.212,2.763,2.212 c0.207,0,0.417-0.023,0.626-0.07C32.032,20.342,32.991,18.825,32.647,17.297z"/>
+            <circle fill="#FFF" cx="30.606" cy="25.029" r="2.834"/>
+            <circle fill="#FFF" cx="3.132" cy="25.029" r="2.835"/>
+          </svg>
+          <span>Repeat</span>
+        </button>
+        <button class="loop">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 33.144 27.794">
+            <path fill="#FFF" d="M3.436,9.195l7.3-0.257L9.152,7.462c2.049-1.145,4.677-1.793,7.419-1.793c4.104,0,7.885,1.423,9.866,3.712 c0.561,0.648,1.351,0.98,2.146,0.98c0.657,0,1.317-0.227,1.853-0.691c1.185-1.024,1.314-2.814,0.289-3.998 C27.652,2.121,22.361,0,16.572,0C12.146,0,8,1.234,4.867,3.47l-1.69-1.575L3.436,9.195z"/>
+            <path fill="#FFF" d="M29.708,18.6l-7.3,0.255l1.584,1.477c-2.051,1.145-4.68,1.793-7.42,1.793c-4.104,0-7.884-1.422-9.866-3.711 c-1.024-1.184-2.814-1.312-3.999-0.287c-1.184,1.025-1.312,2.814-0.288,3.999c3.074,3.55,8.364,5.669,14.152,5.669 c4.424,0,8.571-1.234,11.704-3.47l1.69,1.575L29.708,18.6z"/>
+            <circle fill="#FFF" cx="30.309" cy="14.002" r="2.834"/>
+            <circle fill="#FFF" cx="2.835" cy="14.002" r="2.835"/>
+          </svg>
+          <span>Loop</span>
+        </button>
+        <button class="next">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.837 27.794">
+            <path fill="#FFF" d="M2.837,27.794c-0.96,0-1.896-0.488-2.429-1.37c-0.809-1.34-0.378-3.083,0.962-3.892l14.182-8.561 L1.352,5.25C0.018,4.431-0.4,2.686,0.419,1.352C1.239,0.018,2.985-0.4,4.318,0.419l18.167,11.158 c0.843,0.518,1.355,1.438,1.352,2.426c-0.004,0.989-0.523,1.905-1.37,2.416L4.3,27.386C3.842,27.663,3.336,27.794,2.837,27.794z"/>
+          </svg>
+          <span>Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="instructions">
+      {% for step in page.videosteps %}
+        <div class="step{{forloop.index0}} instruction">
+          <h3>#{{forloop.index}} {{step.title}}</h3>
+          <p>{{step.description}}</p>
+        </div>
+      {% endfor %}
+  </div>
+</div>
+{% javascript videoInstruction.js %}
+<script>
+window.addEventListener('load', function(){
+  var v = new videoInstruction({
+    element: document.querySelector('.videoInstruction'),
+    video: document.querySelector('.videoInstruction video'),
+    steps: document.querySelector('.videoInstruction .steps'),
+    instructions: document.querySelector('.videoInstruction .instructions'),
+    controls: document.querySelector('.videoInstruction .controls'),
+    chapterData: {}
+  });
+});
+
+</script>

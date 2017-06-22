@@ -1,0 +1,143 @@
+#videoInstruction{
+  #docpage{
+    #sidebar{
+      float:left;
+      width:auto;
+      padding:10px;
+    }
+    #sidebar h3, #sidebar div{
+      display:inline-block;
+    }
+    .centre{
+      width:760px;
+    }
+    #doc{
+      margin:10px 0 0 10px;
+    }
+  }
+  
+}
+
+.videoInstruction{
+  margin-top:10px;
+  
+  .flex{
+    display: flex;
+  }
+
+  video{
+    width:100%;
+  }
+
+  .video{
+    position:relative;
+    flex: 2 0 0;
+    
+    .controls{
+      position:absolute;
+      top:0;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      width:100%;
+      height:100%;
+      
+      button{
+        display:none;
+        background:rgba(0, 0, 0, 0.3);
+        text-align:center;
+        border:none;
+        color:#FFF;
+        border-radius:6px;
+        padding:10px;
+        font-size:120%;
+        margin:10px;
+        outline:0;
+        
+        svg{
+          height: 50px;
+        }
+        span{
+          display: block;
+          font-family: $font-family;
+          font-weight:bold;
+        }
+      }
+      .start{
+        display:inline-block;
+      }
+      &.small{
+        height:inherit;
+        top:inherit;
+        bottom:0;
+        button{
+          border-radius:4px;
+          padding:5px;
+          font-size:90%;
+          margin:6px;
+        
+          svg{
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+  
+  .steps{
+    flex: 1 0 0;
+    display:flex;
+    flex-direction: column;
+    
+    
+    h3{
+      margin:0;
+      padding:10px 0;
+      background:#EEE;
+    }
+    
+    ul{
+      list-style-type:none;
+      overflow:auto;
+      border:0;
+      margin:0;
+      padding:0;
+      flex:1;
+      height:200px;
+      li{
+        padding:10px 5px;
+        border-bottom:1px solid #666;
+        cursor: pointer; cursor: hand;
+      }
+      li.active, li.active:hover{
+        background:#DDD;
+      }
+      li:hover{
+        background:#EEE;
+      }
+    }
+  }
+  
+  .instructions{
+    display:block;
+    min-height:50px;
+    background:#EAEAEA;
+    padding:10px;
+    
+    .instruction{
+      display:none;
+    }
+    .active{
+      display:block;
+    }
+  }
+  
+  progress{
+    -webkit-appearance: none;
+    width:100%;
+    height:5px;
+    color:#00F;
+    background-color:#FFF;
+  }
+  
+}

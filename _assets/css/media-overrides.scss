@@ -1,0 +1,63 @@
+@media all and (max-width: 1060px) {
+  #docpage #sidebar{
+    float:left;
+    width:auto;
+    padding:10px;
+  }
+  #docpage #sidebar h3, #docpage #sidebar div{
+    display:inline-block;
+  }
+  #docpage .centre{
+    width:760px;
+  }
+  #docpage #doc{
+    margin:10px 0 0 10px;
+  }
+}
+
+@media all and (max-width: 780px) {
+  #docpage #sidebar{
+    margin:0 10px;
+  }
+  #docpage.centre{
+    width:100%;
+  }
+  #docpage #doc{
+    margin:10px 10px 0 10px;
+    width:auto !important;
+  }
+}
+
+@media all and (max-width: 1140px) {
+  #home #sidebar{
+    width:auto;
+    float:left;
+    padding:10px;
+    margin:10px;
+    font-size:90%;
+  }
+  #sidebar h3{
+    display:inline-block;
+  }
+  #home .centre{
+    position:relative;
+    width:850px;
+  }
+  #docs{
+    width:100%;
+  }
+}
+@media all and (max-width: 840px) {
+  #home .centre{
+    width:100%;
+  }
+}
+@media all and (max-width: 545px) {
+  #home .doc{
+    width:90%
+  }
+  #home #sidebar{
+    font-size:70%;
+  }
+}
+
