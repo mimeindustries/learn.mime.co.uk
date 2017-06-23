@@ -56,43 +56,48 @@ var videoInstruction = function(conf){
   
   this.displayStep = function(step){
     if(this.displayedStep !== step){
-      console.log("Moving to step " + step);
       this.displayedStep = step;
-      this.steps.querySelectorAll('li').forEach(function(step){
-        step.classList.remove('active');
-      });
+      var els = this.steps.querySelectorAll('li')
+      for(var i=0; i< els.length; i++){
+        els[i].classList.remove('active');
+      }
       this.steps.querySelector('.step' + step).classList.add('active');
-      this.instructions.querySelectorAll('.instruction').forEach(function(instruction){
-        instruction.classList.remove('active');
-      });
+      var els = this.instructions.querySelectorAll('.instruction')
+      for(var i=0; i< els.length; i++){
+        els[i].classList.remove('active');
+      }
       this.instructions.querySelector('.step' + step).classList.add('active');
       this.displayedStep = step;
     }
   }
   
   this.initTiming = function(){
-    this.steps.querySelectorAll('li').forEach(function(step){
-      self.steps[step.getAttribute('data-time')] = {step: step.getAttribute('data-step'), time: step.getAttribute('data-time')};
-    });
+    var els = this.steps.querySelectorAll('li')
+    for(var i=0; i< els.length; i++){
+      self.steps[els[i].getAttribute('data-time')] = {step: els[i].getAttribute('data-step'), time: els[i].getAttribute('data-time')};
+    }
     this.times = Object.keys(this.steps).map(function(k){return Number(k)}).sort(function (a, b) {  return a - b;  });
   }
   
   this.initSteps = function(){
-    this.steps.querySelectorAll('li').forEach(function(step){
-      step.addEventListener('click', function(el){
+    var els = this.steps.querySelectorAll('li')
+    for(var i=0; i< els.length; i++){
+      els[i].addEventListener('click', function(e){
+        var el = e.target || e.srcElement;
         self.controls.classList.add('small');
-        self.gotoStep(Number(el.srcElement.getAttribute('data-step')), true);
+        self.gotoStep(Number(el.getAttribute('data-step')), true);
         return false;
       });
-    })
+    }
   }
   
   var showCtrls = function(conf){
     if(conf === 'loop') conf = {start: false, back: self.shouldLoop, next: self.shouldLoop, loop: self.shouldLoop, repeat: false}
     if(conf === 'normal') conf = {start: false, back: true, next: true, loop: true, repeat: true}
-    Object.keys(conf).forEach(function(key){
-      self.controls.querySelector('.' + key).style.display = (conf[key] ? 'inline-block' : 'none');
-    });
+    var els = Object.keys(conf)
+    for(var i=0; i< els.length; i++){
+      self.controls.querySelector('.' + els[i]).style.display = (conf[els[i]] ? 'inline-block' : 'none');
+    }
   }
   
   this.start = function(){
