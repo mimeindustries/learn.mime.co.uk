@@ -33,7 +33,6 @@ var videoInstruction = function(conf){
           }, 1500);
         }else{
           this.video.pause();
-          showCtrls({start: false, next: true, back: true, repeat: !this.shouldLoop, loop: true});
         }
       }
     }
@@ -46,7 +45,7 @@ var videoInstruction = function(conf){
 
   this.gotoStep = function(step, play){
     if(loopDelay) window.clearTimeout(loopDelay);
-    this.shouldLoop ? showCtrls('loop') : hideAllCtrls();
+    this.shouldLoop ? showCtrls('loop') : showCtrls('normal');
     this.currentStep = step;
     this.video.currentTime = this.times[step] + 0.1;
     this.displayStep(step);
@@ -86,15 +85,10 @@ var videoInstruction = function(conf){
       });
     })
   }
-
-  var hideAllCtrls = function(el){
-    self.controls.querySelectorAll('button').forEach(function(el){
-      el.style.display = 'none';
-    });
-  }
   
   var showCtrls = function(conf){
     if(conf === 'loop') conf = {start: false, back: self.shouldLoop, next: self.shouldLoop, loop: self.shouldLoop, repeat: false}
+    if(conf === 'normal') conf = {start: false, back: true, next: true, loop: true, repeat: true}
     Object.keys(conf).forEach(function(key){
       self.controls.querySelector('.' + key).style.display = (conf[key] ? 'inline-block' : 'none');
     });
@@ -104,7 +98,7 @@ var videoInstruction = function(conf){
     window.scrollTo(0, this.element.getBoundingClientRect().top - document.getElementById('header').getBoundingClientRect().bottom + window.scrollY);
     this.gotoStep(0, true);
     this.controls.classList.add('small');
-    hideAllCtrls();
+    showCtrls('normal');
   }
   
   this.back = function(){
@@ -134,7 +128,7 @@ var videoInstruction = function(conf){
     if(this.shouldLoop){
       this.gotoStep(this.currentStep, true);
     }else{
-      showCtrls({start: false, next: true, back: true, repeat: true, loop: true});
+      showCtrls('normal');
       this.video.pause();
     }
   }
