@@ -1,9 +1,4 @@
-$mime-yellow:       #F1BE48;
-$mime-orange:       #FF8200;
-$mime-light-blue:   #00A3E0;
-$mime-dark-blue:    #1B365D;
-$font-family:       "T Star Mono Round", "Lucida Console", Monaco, monospace;
-
+@import 'definitions.scss';
 @import 'reset.scss';
 @import 'fonts.scss';
 @import 'base.scss';

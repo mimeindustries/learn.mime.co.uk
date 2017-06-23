@@ -1,3 +1,5 @@
+@import 'definitions.scss';
+
 .videoInstruction{
   margin-top:10px;
   
@@ -91,7 +93,9 @@
         cursor: pointer; cursor: hand;
       }
       li.active, li.active:hover{
-        background:#DDD;
+        background:$mime-light-blue;
+        color:#FFF;
+        font-weight:bold;
       }
       li:hover{
         background:#EEE;
