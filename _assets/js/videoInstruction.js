@@ -44,7 +44,7 @@ var videoInstruction = function(conf){
   }
 
   this.gotoStep = function(step, play){
-    window.scrollTo(0, this.element.getBoundingClientRect().top - document.getElementById('header').getBoundingClientRect().bottom + window.scrollY);
+    window.scrollTo(0, this.element.getBoundingClientRect().top - document.getElementById('header').getBoundingClientRect().bottom + window.pageYOffset);
     if(loopDelay) window.clearTimeout(loopDelay);
     this.shouldLoop ? showCtrls('loop') : showCtrls('normal');
     this.currentStep = step;
