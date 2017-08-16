@@ -120,7 +120,7 @@ videosteps:
     description: "Take the two large base pieces and align them with the white part on top, making sure that the four screw holes are properly aligned. These parts are not symmetrical so it is important to get them the right way around"
   - time: 97.2
     title: Attach the HAT to the Pi
-    description: "Gently attach the Pi HAT to the GPIO pins on the Raspberry Pi, making sure they align properly. Push down gently but stop before it is fully on to leave room for the spacers. At this point it's also worth setting up the SD card for the Pi so it's easier to get in. You can download the latest image from <a href=\"http://downloads.mime.co.uk/MeArmPi-latest\">here</a> and follow <a href=\"https://www.raspberrypi.org/documentation/installation/installing-images/\">these instructions</a> to flash it."
+    description: "Gently attach the Pi HAT to the GPIO pins on the Raspberry Pi, making sure they align properly. Push down gently but stop before it is fully on to leave room for the spacers. At this point it's also worth setting up the SD card for the Pi so it's easier to get in. You can download the latest image from <a href=\"http://downloads.mime.co.uk/MeArmPi-latest\">here</a> (or <a href=\"http://downloads.mime.co.uk/MeArmPiZero-latest\">here</a> for the Pi Zero W) and follow <a href=\"https://www.raspberrypi.org/documentation/installation/installing-images/\">these instructions</a> to flash it."
   - time: 99.5
     title: Insert the spacers and screws
     description: "One by one, take a round spacer and push it into the side of the Pi and HAT then slot a 16mm screw through to hold it in place"
