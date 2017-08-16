@@ -10,8 +10,8 @@ tags:
 hardware: mearm-pi
 type: instruction
 level: core
-videofilex: https://s3.amazonaws.com/video.mime.co.uk/mearm-pi-build-v409.mp4
-videofile: /assets/video_local/MeArm-Pi-v450.mp4
+videofile: https://s3.amazonaws.com/video.mime.co.uk/mearm-pi-build-v409.mp4
+localvideofile: /assets/video_local/MeArm-Pi-v450.mp4
 videosteps:
   - time: 0.1
     title: Fit the servo into the Base PCB
