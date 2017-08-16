@@ -2,5 +2,4 @@
 _site
 .env
 .asset-cache*
-Icon*
-assets/mearm-pi-build-v409.mp4
+assets/video_local
