@@ -11,7 +11,7 @@ tags:
 hardware: mearm-pi
 type: instruction
 level: core
-videofile: https://s3.amazonaws.com/video.mime.co.uk/mearm-pi-build-v409.mp4
+videofile: https://s3.amazonaws.com/video.mime.co.uk/MeArm-Pi-v450.mp4
 localvideofile: /assets/video_local/MeArm-Pi-v450.mp4
 videosteps:
   - time: 0.1
