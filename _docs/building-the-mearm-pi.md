@@ -163,4 +163,4 @@ This version of the instructions is for a Model B+ style Raspberry Pi (e.g. Rasp
 
 Before you build the arm you should get your Raspberry Pi SD card ready so you can get it in more easily. Download the latest image from [here](http://downloads.mime.co.uk/MeArmPi-latest) and follow [these instructions](https://www.raspberrypi.org/documentation/installation/installing-images/) to flash it.
  
-Once you've done this you're ready to start building your MeArm Pi. Click "Start" to get going - if you need to repeat a step you can press the "repeat" button or press "loop" to keep looping a step until you're ready to move on ot the next.
+Once you've done this you're ready to start building your MeArm Pi. Click "Start" to get going - if you need to repeat a step you can press the "repeat" button or press "loop" to keep looping a step until you're ready to move on to the next.
