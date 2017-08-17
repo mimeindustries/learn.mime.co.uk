@@ -14,7 +14,7 @@ layout: doc
     </div>
     <div class="video">
       <video>
-        <source src='{% if site.env == 'production' %}{{ page.videofile }}{% else %}{{ page.localvideofile }}{% endif %}' type='video/mp4'>
+        <source src='{% if jekyll.environment == 'production' %}{{ page.videofile }}{% else %}{{ page.localvideofile }}{% endif %}' type='video/mp4'>
       </video>
       <div class="controls">
         <button class="start">
