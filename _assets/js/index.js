@@ -68,6 +68,7 @@ var enumFilter = function(e, list){
     e.srcElement.className = "selected";
   }
   filterDocs();
+  e.preventDefault();
   return false;
 }
 
@@ -113,13 +114,14 @@ var tagFilter = function(e, list){
     }
   }
   filterDocs();
+  e.preventDefault();
   return false;
 }
 
 var setupFilter = function(type, fn, list, enabledFn){
   var links = document.querySelectorAll("#" + type + " a");
   for(var i=0; i<links.length; i++){
-    links[i].onclick = function(e){ fn(e, list) };
+    links[i].addEventListener('click', function(e){ return fn(e, list) });
     links[i].className = enabledFn(links[i], list) ? "selected" : "unselected";
   }
 }
