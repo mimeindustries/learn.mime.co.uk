@@ -5,6 +5,7 @@ layout: doc
 tags:
   - Troubleshooting
   - Help
+  - Raspberry Pi
 hardware: mearm-pi
 type: troubleshooting
 level: core

@@ -1,6 +1,6 @@
 ---
-title: Building the MeArm Pi
-summary: The video guide for building the MeArm Pi
+title: Building the MeArm Pi (Pi Zero)
+summary: The video guide for building the MeArm Pi with a Pi Zero
 layout: video
 bodyclass: wide
 tags:
@@ -11,8 +11,8 @@ tags:
 hardware: mearm-pi
 type: instruction
 level: core
-videofile: https://s3.amazonaws.com/video.mime.co.uk/mearm-pi-build-v409.mp4
-localvideofile: /assets/video_local/MeArm-Pi-v450.mp4
+videofile: https://s3.amazonaws.com/video.mime.co.uk/MeArm-PiZero-v450.mp4
+localvideofile: /assets/video_local/MeArm-PiZero-v450.mp4
 videosteps:
   - time: 0.1
     title: Fit the servo into the Base PCB
@@ -119,31 +119,31 @@ videosteps:
   - time: 93.5
     title: Align the two base pieces
     description: "Take the two large base pieces and align them with the white part on top, making sure that the four screw holes are properly aligned. These parts are not symmetrical so it is important to get them the right way around"
-  - time: 96.7
+  - time: 97.2
     title: Attach the HAT to the Pi
     description: "Gently attach the Pi HAT to the GPIO pins on the Raspberry Pi, making sure they align properly. Push down gently but stop before it is fully on to leave room for the spacers. Make sure the SD card you prepared before starting is in the slot on your Pi."
-  - time: 99.5
+  - time: 100.0
     title: Insert the spacers and screws
-    description: "One by one, take a round spacer and push it into the side of the Pi and HAT then slot a 16mm screw through to hold it in place"
-  - time: 102.6
+    description: "One by one, take a round spacer and slide it between the Pi and HAT then slot a 16mm screw through to hold it in place. Place the two longer spacers between the HAT and the base ready to screw through."
+  - time: 103.3
     title: Screw down the Pi
     description: "Gently align all four screws that should be sticking out of the bottom of the Raspberry Pi with the holes in the base and then screw them all into place. Do not overtighten the screws"
-  - time: 104.3
+  - time: 105.0
     title: Insert the front and back sides
     description: "Slot the front (part #24) and back (part #23) sides into place. If you have used a Pi Zero, then you should use part #25 instead of part #23 as you don't need the extra holes"
-  - time: 106.8
-    title: Insert the left side
+  - time: 107.2
+    title: Insert the short sides
     description: "Slot part #25 into place on the left of the base. If you're using a Pi Zero then there's an extra one of these to fill the gap on the right side of the base"
-  - time: 108.6
+  - time: 109.0
     title: Attach the base cover
     description: "Slot all of the tabs on the edges into the cover and attach an elastic on either side of the base"
   - time: 111.8
     title: Attach the joystick caps
     description: "Push the joystick caps on to the joysticks. It's best to take a look at these and get them aligned properly because there are two flat sides that need aligning"
-  - time: 113.9
+  - time: 114.3
     title: Slide the arm on to the base
     description: "Gently prise the two base plates apart and slide the servo arm in between them and slide it down the central slot until it clips into place in the hole in the bottom"
-  - time: 116.5
+  - time: 116.9
     title: Attach the front elastic band
     description: "Attach the final elastic band across the front of the base to hold the plates together and make a stable foot to stand it on"
   - time: 120.0
@@ -156,11 +156,11 @@ videosteps:
 
  - Don't force any of the pieces into position. If something won't fit then it's probably not meant to. If a part is meant to go on a specific way around then it has been designed to only go on that way around. If it doesn't seem to fit correctly then try turning it around.
 
- - Because the kit has been designed to work for multiple sizes of Raspberry Pi there will be some pieces left over. Don't worry! In this case there should be two small plastic spacers and the long edge of the base with one hole in it for the Raspberry Pi Zero.
+ - Because the kit has been designed to work for multiple sizes of Raspberry Pi there will be some pieces left over. Don't worry! In this case there should be two small plastic spacers and the long edge of the base with the holes in for the Raspberry Pi.
 
 ## Before you start
-This version of the instructions is for a Model B+ style Raspberry Pi (e.g. Raspberry Pi 2 or 3). If you are building your MeArm Pi using a Raspberry Pi Zero then please use [these instructions](../building-the-mearm-pi-zero/).
+This version of the instructions is for a Raspberry Pi Zero. If you are building your MeArm Pi using a model B+ style Raspberry Pi then please use [these instructions](../building-the-mearm-pi/).
 
-Before you build the arm you should get your Raspberry Pi SD card ready so you can get it in more easily. Download the latest image from [here](http://downloads.mime.co.uk/MeArmPi-latest) and follow [these instructions](https://www.raspberrypi.org/documentation/installation/installing-images/) to flash it.
+Before you build the arm you should get your Raspberry Pi SD card ready so you can get it in more easily. Download the latest image from [here](http://downloads.mime.co.uk/MeArmPiZero-latest) and follow [these instructions](https://www.raspberrypi.org/documentation/installation/installing-images/) to flash it.
  
 Once you've done this you're ready to start building your MeArm Pi. Click "Start" to get going - if you need to repeat a step you can press the "repeat" button or press "loop" to keep looping a step until you're ready to move on ot the next.

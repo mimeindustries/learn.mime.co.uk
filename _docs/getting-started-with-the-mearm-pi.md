@@ -6,6 +6,7 @@ tags:
   - Getting Started
   - Guide
   - Software
+  - Raspberry Pi
 hardware: mearm-pi
 type: instruction
 level: core
