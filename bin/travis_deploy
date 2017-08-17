@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export JEKYLL_ENV=production
 rm -rf ./_site/*
 rvm $TRAVIS_RUBY_VERSION do bundle exec jekyll build
 rvm $TRAVIS_RUBY_VERSION do bundle exec s3_website push
