@@ -13,15 +13,15 @@ layout: default
       <div class="filter" id="hw-filter">
         <h3>Filter by Hardware</h3>
         {% for hw in hwhash %}
-        <a href="javascript:void(0);" data-filter="{{ hw[0] | downcase }}">{{ hw[0] }}</a>
+        <a href="#" data-filter="{{ hw[0] | downcase }}">{{ hw[0] }}</a>
         {% endfor %}
       </div>
-      <div class="filter" id="type-filter"><h3>Filter by Type</h3><a data-filter="type-instruction" href="javascript:void(0);">Instructions</a> <a data-filter="type-challenge" href="javascript:void(0);">Challenges</a> <a data-filter="type-lesson-plan" href="javascript:void(0);">Lesson plans</a> <a data-filter="type-documentation" href="javascript:void(0);">Documentation</a> <a data-filter="type-troubleshooting" href="javascript:void(0);">Troubleshooting</a></div>
-      <div class="filter" id="level-filter"><h3>Filter by Skill Level</h3><a data-filter="level-core" href="javascript:void(0);">Core</a> <a data-filter="level-beginner" href="javascript:void(0);">Beginner</a> <a data-filter="level-intermediate" href="javascript:void(0);">Intermediate</a> <a data-filter="level-advanced" href="javascript:void(0);">Advanced</a></div>
+      <div class="filter" id="type-filter"><h3>Filter by Type</h3><a data-filter="type-instruction" href="#">Instructions</a> <a data-filter="type-challenge" href="#">Challenges</a> <a data-filter="type-lesson-plan" href="#">Lesson plans</a> <a data-filter="type-documentation" href="#">Documentation</a> <a data-filter="type-troubleshooting" href="#">Troubleshooting</a></div>
+      <div class="filter" id="level-filter"><h3>Filter by Skill Level</h3><a data-filter="level-core" href="#">Core</a> <a data-filter="level-beginner" href="#">Beginner</a> <a data-filter="level-intermediate" href="#">Intermediate</a> <a data-filter="level-advanced" href="#">Advanced</a></div>
       <div class="filter" id="tag-filter">
         <h3>Filter by Tag</h3>
         {% for tag in taghash %}
-        <a href="javascript:void(0);" data-filter="{{ tag[0] | downcase }}">{{ tag[0] }} <span class="count">[{{ tag[1] }}]</span></a>
+        <a href="#" data-filter="{{ tag[0] | downcase }}">{{ tag[0] }} <span class="count">[{{ tag[1] }}]</span></a>
         {% endfor %}
       </div>
     </div>
