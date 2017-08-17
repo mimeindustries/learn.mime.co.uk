@@ -2,7 +2,6 @@
 title: Building the MeArm Maker
 summary: The video guide for building the MeArm Maker edition
 layout: video
-frontpage: false
 bodyclass: wide
 tags:
   - Video
@@ -130,9 +129,12 @@ videosteps:
     description: "Gently prise the two base plates apart and slide the servo arm in between them and slide it down the central slot until it clips into place in the hole in the bottom"
   - time: 103.5
     title: Attach the front elastic band
-    description: "Attach the final elastic band across the front of the base to hold the plates together and make a stable foot to stand it on"
-  - time: 105.5
-    title: Connect the cable
-    description: "Plug the cable in to the base of the arm. You can use this to connect to the arm and control it using your own controller"
+    description: "Attach the final elastic band across the front of the base to hold the plates together and make a stable foot to stand it on. Plug the cable in to the base of the arm. You can use this to connect to the arm and control it using your own controller"
 ---
 
+## Tips for success:
+ - Don't overtighten the screws! Tightening them too much can damage the arm. The best way of tightening the screws is to screw them in until they stop the joint moving freely and then loosen them slightly until it moves with no friction.
+
+ - Don't force any of the pieces into position. If something won't fit then it's probably not meant to. If a part is meant to go on a specific way around then it has been designed to only go on that way around. If it doesn't seem to fit correctly then try turning it around.
+
+Click "Start" to get going - if you need to repeat a step you can press the "repeat" button or press "loop" to keep looping a step until you're ready to move on ot the next.
