@@ -5,18 +5,18 @@ layout: default
 <div id="docpage" class="centre">
   <div id="sidebar" class="filter">
     <p>{{ page.summary }}</p>
-    <div class="type"><h3>Type</h3><a href="javascript:void(0);" class="type">{{ page.type | capitalize  }}</a></div>
-    <div class="type"><h3>Skill Level</h3><a href="javascript:void(0);" class="level">{{ page.level | capitalize  }}</a></div>
+    <div class="type"><h3>Type</h3><a href="/#type={{ page.type | downcase  }}" class="type">{{ page.type | capitalize  }}</a></div>
+    <div class="type"><h3>Skill Level</h3><a href="/#level={{ page.level | downcase  }}" class="level">{{ page.level | capitalize  }}</a></div>
     <div class="tags">
       <h3>Tags</h3>
       {% for tag in page.tags %}
-        <a href="javascript:void(0);" class="tag">{{ tag | capitalize }}</a>
+        <a href="/#tags={{tag | downcase }}" class="tag">{{ tag | capitalize }}</a>
       {% endfor %}
     </div>
     <div class="tags">
       <h3>Hardware</h3>
       {% for version in page.hardware %}
-        <a href="javascript:void(0);" class="hw">{{ version | capitalize }}</a>
+        <a href="/#hw={{version | downcase }}" class="hw">{{ version | capitalize }}</a>
       {% endfor %}
     </div>
   </div>

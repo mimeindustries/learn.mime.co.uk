@@ -158,8 +158,30 @@ var tagLinkEnabled = function(link, list){
   }
 }
 
+var checkShortcuts = function(){
+  if(typeof type !== 'undefined'){
+    // Shortcut to a document type so hide the others
+    var links = document.querySelectorAll("#type-filter a");
+    for(var i=0; i<links.length; i++){
+      if(links[i].getAttribute('data-filter') !== 'type-' + type){
+        hidden.push(links[i].getAttribute('data-filter'));
+      }
+    }
+  }
+  if(typeof level !== 'undefined'){
+    // Shortcut to a skill level so hide the others
+    var links = document.querySelectorAll("#level-filter a");
+    for(var i=0; i<links.length; i++){
+      if(links[i].getAttribute('data-filter') !== 'level-' + level){
+        hidden.push(links[i].getAttribute('data-filter'));
+      }
+    }
+  }
+}
+
 var setupFilters = function(){
   parseUrl();
+  checkShortcuts();
   setupFilter('type-filter', enumFilter, hidden, filterLinkEnabled);
   setupFilter('level-filter', enumFilter, hidden, filterLinkEnabled);
   setupFilter('tag-filter', tagFilter, tags, tagLinkEnabled);
