@@ -137,4 +137,6 @@ videosteps:
 
  - Don't force any of the pieces into position. If something won't fit then it's probably not meant to. If a part is meant to go on a specific way around then it has been designed to only go on that way around. If it doesn't seem to fit correctly then try turning it around.
 
+You can also view these instructions as a [pdf](/assets/mearm-instructions-web.pdf).
+
 Click "Start" to get going - if you need to repeat a step you can press the "repeat" button or press "loop" to keep looping a step until you're ready to move on to the next.

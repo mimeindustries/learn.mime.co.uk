@@ -159,7 +159,7 @@ videosteps:
  - Because the kit has been designed to work for multiple sizes of Raspberry Pi there will be some pieces left over. Don't worry! In this case there should be two small plastic spacers and the long edge of the base with one hole in it for the Raspberry Pi Zero.
 
 ## Before you start
-This version of the instructions is for a Model B+ style Raspberry Pi (e.g. Raspberry Pi 2 or 3). If you are building your MeArm Pi using a Raspberry Pi Zero then please use [these instructions](../building-the-mearm-pi-zero/).
+This version of the instructions is for a Model B+ style Raspberry Pi (e.g. Raspberry Pi 2 or 3). If you are building your MeArm Pi using a Raspberry Pi Zero then please use [these instructions](../building-the-mearm-pi-zero/). You can also view these instructions as a [pdf](/assets/mearm-instructions-web.pdf).
 
 Before you build the arm you should get your Raspberry Pi SD card ready so you can get it in more easily. Download the latest image from [here](http://downloads.mime.co.uk/MeArmPi-latest) and follow [these instructions](https://www.raspberrypi.org/documentation/installation/installing-images/) to flash it.
  
