@@ -37,14 +37,14 @@ The Pro Mini Clone ships with another piece of hardware called a [CP2102](https:
 
 ![](/assets/docs/reprogramming-the-mearm-deluxe/02.jpg)
 
-From here we'll devide the programming methods starting with the Pro Mini and CP2102 hardware, since that's the most recent revision of the MeArm Brains Board.
+From here we'll divide the programming methods starting with the Pro Mini and CP2102 hardware, since that's the most recent revision of the MeArm Brains Board.
 
 
 Programming the Pro Mini with CP2102
 -------------
 
 
-At first gland this will seem the more complex of the two methods, but it is the best supported and most robust. 
+At first glance this will seem the more complex of the two methods, but it is the best supported and most robust. 
 
 First connect the Pro Mini and CP2102.
 
@@ -131,7 +131,7 @@ You are now ready to start programming your Pro Micro Clone (MeArm Brains Board)
 What next?
 -------------
 
-Now you can start experimenting. The MeArm Brains board comes with a controller and LCD and we have examples of how to get these running. But the controls aren�t perfect for a reason, so you can make them how you like them! Check out the code and our Pin Out diagram so you can get started! This pinout is the same for the Pro Mini, with the exception of one of the GNDs shown below is a Reset pin, this will have been removed on your Pro Mini!
+Now you can start experimenting. The MeArm Brains board comes with a controller and LCD and we have examples of how to get these running. But the controls aren't perfect for a reason, so you can make them how you like them! Check out the code and our Pin Out diagram so you can get started. This pinout is the same for the Pro Mini, with the exception of one of the GNDs shown below is a Reset pin, this will have been removed on your Pro Mini!  
 
 ![](/assets/docs/reprogramming-the-mearm-deluxe/06.jpg)
 
