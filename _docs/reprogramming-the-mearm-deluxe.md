@@ -101,9 +101,9 @@ and under
 
 Additional Boards Manager URLs:
 
-paste the following:
+paste the following link:
 
-"https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json Click OK
+https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json Click OK
 
 Then go to
 
@@ -119,7 +119,7 @@ and select Pro Micro.
 
 Go to Tools > Processor
 
-and select “ATMega32u4 (3.3V, 8MHz)” or “ATMega32u4 (5.0V, 16MHz)” depending on your board.
+and select "ATMega32u4 (3.3V, 8MHz)" or "ATMega32u4 (5.0V, 16MHz)" depending on your board.
 
 Plugging in your Pro Micro Clone via USB should now install the correct driver. If it fails, please use this driver file (right click and save file as).
 
