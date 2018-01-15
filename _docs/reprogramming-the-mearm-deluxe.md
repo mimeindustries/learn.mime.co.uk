@@ -1,6 +1,6 @@
 ---
-title: Building the v1 Chassis
-summary: Here's how to build the chassis for the first version of Mirobot
+title: Reprogramming the MeArm Deluxe
+summary: Here's how to reprogram the Brains Board in you MeArm Deluxe
 layout: doc
 tags:
   - Building
