@@ -82,7 +82,7 @@ videosteps:
     description: "Attach a servo clip (part #14) to either side of the servo and clip it in to the bottom of the base."
   - time: 60.0
     title: Wind the cable
-    description: "Wind the cable around the servo clips to keep it tidy and then plug it into the pins on the base. Looking at the side, the cable should be wound clockwise, passing up and over the servo first. The yellow wire should be to the right"
+    description: "Wind the cable around the servo clips to keep it tidy and then plug it into the pins on the base. Looking at the side, the cable should be wound clockwise, passing up and over the servo first. The yellow wire should be to the left (N.B Not the right as shown here!)"
   - time: 61.5
     title: Attach the elastic band
     description: "Place an elastic band around the base, holding the bottoms of the servo clips securely in place. Put this assembly to one side now"
