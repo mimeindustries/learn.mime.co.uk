@@ -1,12 +1,12 @@
-@import 'base.scss';
 @import 'mixins.scss';
+@import 'fonts.scss';
+@import 'base.scss';
 @import 'definitions.scss';
+@import 'reset.scss';
+@import 'header.scss';
 @import 'doc.scss';
 @import 'elements.scss';
 @import 'filters.scss';
-@import 'fonts.scss';
-@import 'header.scss';
 @import 'home.scss';
 @import 'media-overrides.scss';
-@import 'reset.scss';
 @import 'videoInstruction.scss';
