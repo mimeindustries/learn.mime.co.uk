@@ -1,3 +1,18 @@
+$mime-yellow:       #F1BE48;
+$mime-orange:       #FF8200;
+$mime-light-blue:   #00A3E0;
+$mime-dark-blue:    #1B365D;
+
+$main:           $mime-light-blue;
+$highlight:      $mime-orange;
+$highlight-dark: #d96f00;
+$title-colour:   $mime-light-blue;
+$grey:           #EEE;
+$light-grey:     #FAFAFA;
+
+$bodyfont:       "T Star Mono Round", "Lucida Console", Monaco, monospace;
+$headlinefont:   "oduda"
+
 @import 'mixins.scss';
 @import 'fonts.scss';
 @import 'definitions.scss';
