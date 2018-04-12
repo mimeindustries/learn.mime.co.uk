@@ -38,34 +38,3 @@ a:visited{color:$mime-light-blue}
   width:1040px;
   margin:0 auto 0;
 }
-
-/*#header{
-  position:fixed;
-  top:0;
-  width:100%;
-  background:$mime-light-blue;
-  padding:0;
-  -webkit-box-shadow: 0 0 12px 0  rgba(0,0,0,0.4);
-  -moz-box-shadow: 0 0 12px 0  rgba(0,0,0,0.4);
-  box-shadow: 0 0 12px 0 rgba(0,0,0,0.4);
-  z-index: 10000;
-  
-  a{
-    display:block;
-    padding:0;
-    margin:5px 0 5px 15px;
-  }
-
-  img{
-    padding:0;
-    max-width:80%;
-    height:40px;
-  }
-  
-  img.learn{
-    margin-top:10px;
-    height:30px;
-    float:right;
-  }
-}
-/*
