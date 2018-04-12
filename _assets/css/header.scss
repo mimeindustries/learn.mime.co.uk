@@ -1,0 +1,141 @@
+$transition-speed: 0.25s;
+$menu-width: 220px;
+$menu-image-size: 80px;
+$menu-padding: 5px;
+
+header{
+  @include transition(padding, $transition-speed);
+	position:fixed;
+	z-index:99999;
+	background:$main;
+	top:0;
+	left:0;
+	right:0;
+	padding:10px 40px;
+	vertical-align:top;
+	@include box-shadow(0px, 0px, 12px, -4px, rgba(0, 0, 0, 0.6));
+	@media all and (max-width: 870px) {
+		padding:10px;
+	}
+	div.menu{
+		position:relative;
+
+    ul {
+      @include transition(margin-top, $transition-speed);
+      display:inline-block;
+      position:absolute;
+      right:0;
+      padding:0;
+      margin-top:10px;
+      @media all and (max-width: 870px) {
+        padding:0 10px;
+        margin-top:0;
+      }
+      @media all and (max-width: 500px) {
+        position:static;
+      }
+      li {
+        list-style-type:none;
+        display:inline-block;
+        padding:0;
+        margin-left:50px;
+        @media all and (max-width: 870px) {
+          margin-left:10px;
+        }
+
+        a {
+          font-size:130%;
+          text-decoration:none;
+          color:#FFF;
+        }
+        a.button {
+          color:#FFF;
+        }
+      }
+
+      li.selected > a {
+        border-bottom:10px solid #FFF;
+      }
+
+      @media all and (max-width: 870px) {
+        font-size:80%;
+      }
+    }
+	}
+
+	h1 {
+		margin:10px 0;
+		padding:0;
+		display:inline-block;
+
+		a {
+		  display:inline-block;
+			text-decoration:none;
+			color:#FFF;
+		}
+		img{
+      @include transition(height, $transition-speed);
+		  height:50px;
+
+      @media all and (max-width: 870px) {
+        height:30px;
+      }
+		}
+	}
+	
+	#productsDropdown{
+	  text-align:center;
+	  display:none;
+	  .productMenu{
+	    position:relative;
+      display:inline-block;
+      width: $menu-width;
+      height:$menu-image-size;
+      text-align:left;
+      vertical-align:top;
+      margin:3px;
+      background-color:rgba(255, 255, 255, 0.1);
+      &:hover{
+        background-color:rgba(255, 255, 255, 0.2);
+      }
+      img{
+        width:$menu-image-size;
+        display:inline-block;
+      }
+      div{
+        vertical-align:top;
+        display:inline-block;
+        padding:$menu-padding;
+        width:$menu-width - (2*$menu-padding) - $menu-image-size;
+      }
+      a{
+        color:#FFF;
+        text-decoration:none;
+      }
+      p{
+        font-size:80%;
+        color:#FFF;
+      }
+      strong{
+        font-weight:bold;
+      }
+    }
+	}
+}
+header.small{
+  padding: 5px 40px;
+  h1 img{
+    height:30px;
+  }
+	div.menu ul{
+		margin-top:-2px;
+	}
+}
+@media all and (max-width: 870px) {
+	header.small{
+    padding:0 10px;
+		h1{
+			font-size:140%;
+		}
+	}
+}
