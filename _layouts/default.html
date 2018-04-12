@@ -36,12 +36,35 @@
     </head>
     <body{% if page.url == "/" %} id="home"{% endif %}{% if page.bodyclass %} class="{{page.bodyclass}}"{% endif %}>
 
-      <div id="header">
-        <div class="centre">
-          <img src="/assets/learn.svg" alt="Learn" class="learn" />
-          <a href="/"><img src="/assets/logo.svg" alt="Mime Industries" /></a>
-        </div>
-      </div>
+  <header>
+            <div class="menu">
+              <h1 class="title"><a href="/"><img src="/assets/logo.svg" alt="Mime Industries" /></a></h1>
+              <ul>
+                <li{% if page.url contains '/products/' %} class="selected"{% endif %}><a class="products" href="https://mime.co.uk/products/">Products</a>
+                </li>
+                <li{% if page.url contains '/education/' %} class="selected"{% endif %}><a href="https://mime.co.uk/education/">Education</a></li>
+                <li{% if page.url contains '/build/' %} class="selected"{% endif %}><a href="https://learn.mime.co.uk/">Build</a></li>
+                <li><a href="https://shop.mime.co.uk/" class="button">Buy</a></li>
+              </ul>
+            </div>
+            <div id="productsDropdown">
+              <div class="productMenu">
+                <a href="https://mime.co.uk/products/mearm-pi/">
+                  <img src="https://mime.co.uk/assets/img/mearmPiDropdown.jpg" /><div><strong>MeArm Pi</strong><p>The Robot Arm for Raspberry Pi</p></div>
+                </a>
+              </div>
+              <div class="productMenu">
+                <a href="https://mime.co.uk/products/mearm-maker/">
+                  <img src="https://mime.co.uk/assets/img/mearmMakerDropdown.jpg" /><div><strong>MeArm Maker</strong><p>Bring your own controller!</p></div>
+                </a>
+              </div>
+              <div class="productMenu">
+                <a href="https://mime.co.uk/products/mirobot/">
+                  <img src="https://mime.co.uk/assets/img/mirobotDropdown.jpg" /><div><strong>Mirobot</strong><p>The WiFi Drawing Robot for Kids</p></div>
+                </a>
+              </div>
+            </div>
+          </header>
       {{ content }}
     </body>
 </html>
