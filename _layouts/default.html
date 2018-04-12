@@ -36,8 +36,8 @@
     </head>
     <body{% if page.url == "/" %} id="home"{% endif %}{% if page.bodyclass %} class="{{page.bodyclass}}"{% endif %}>
 
-  <header>
-            <div class="menu">
+  <div id="header">
+            <div class="centre">
               <h1 class="title"><a href="/"><img src="/assets/logo.svg" alt="Mime Industries" /></a></h1>
               <ul>
                 <li{% if page.url contains '/products/' %} class="selected"{% endif %}><a class="products" href="https://mime.co.uk/products/">Products</a>
@@ -47,7 +47,7 @@
                 <li><a href="https://shop.mime.co.uk/" class="button">Buy</a></li>
               </ul>
             </div>
-          </header>
+          </div>
       {{ content }}
     </body>
 </html>
