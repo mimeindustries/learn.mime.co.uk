@@ -1,5 +1,6 @@
-@import 'definitions.scss';
 @import 'base.scss';
+@import 'mixins.scss';
+@import 'definitions.scss';
 @import 'doc.scss';
 @import 'elements.scss';
 @import 'filters.scss';
@@ -7,6 +8,5 @@
 @import 'header.scss';
 @import 'home.scss';
 @import 'media-overrides.scss';
-@import 'mixins.scss';
 @import 'reset.scss';
 @import 'videoInstruction.scss';
