@@ -35,13 +35,45 @@
         {% endif %}
     </head>
     <body{% if page.url == "/" %} id="home"{% endif %}{% if page.bodyclass %} class="{{page.bodyclass}}"{% endif %}>
-
-      <div id="header">
-        <div class="centre">
-          <img src="/assets/learn.svg" alt="Learn" class="learn" />
-          <a href="/"><img src="/assets/logo.svg" alt="Mime Industries" /></a>
+      <header>
+        <div class="menu">
+          <h1 class="title"><a href="/"><img src="/assets/logo.svg" alt="Mime Industries" /></a></h1>
+          <ul>
+            <li><a class="products" href="//mime.co.uk/products/">Products</a></li>
+            <li><a href="//mime.co.uk/education/">Education</a></li>
+            <li><a href="//mime.co.uk/build/">Build</a></li>
+            <li><a href="https://shop.mime.co.uk/" class="button">Buy</a></li>
+          </ul>
         </div>
-      </div>
+        <div id="productsDropdown">
+          <div class="productMenu">
+            <a href="//mime.co.uk/products/mearm-pi/">
+              <img src="/assets/img/mearmPiDropdown.jpg" /><div><strong>MeArm Pi</strong><p>The Robot Arm for Raspberry Pi</p></div>
+            </a>
+          </div>
+          <div class="productMenu">
+            <a href="//mime.co.uk/products/mearm-maker/">
+              <img src="/assets/img/mearmMakerDropdown.jpg" /><div><strong>MeArm Maker</strong><p>Bring your own controller!</p></div>
+            </a>
+          </div>
+          <div class="productMenu">
+            <a href="//mime.co.uk/products/mirobot/">
+              <img src="/assets/img/mirobotDropdown.jpg" /><div><strong>Mirobot</strong><p>The WiFi Drawing Robot for Kids</p></div>
+            </a>
+          </div>
+        </div>
+      </header>
       {{ content }}
+      <script type="text/javascript">
+var showProductMenu = function(){
+  document.querySelector('#productsDropdown').style.display = 'block';
+}
+var hideProductMenu = function(){
+  document.querySelector('#productsDropdown').style.display = 'none';
+}
+document.querySelector('header .products').addEventListener('mouseenter', showProductMenu);
+document.querySelector('header .products').addEventListener('touchstart', showProductMenu);
+document.querySelector('header').addEventListener('mouseleave', hideProductMenu);
+      </script>
     </body>
 </html>
