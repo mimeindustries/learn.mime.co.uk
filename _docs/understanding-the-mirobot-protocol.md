@@ -8,6 +8,7 @@ tags:
 hardware:
   - mirobot-v1
   - mirobot-v2
+  - mirobot-v3
 type: documentation
 level: advanced
 ---
