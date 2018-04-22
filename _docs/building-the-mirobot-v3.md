@@ -39,7 +39,7 @@ videosteps:
     description: "Slide down the battery holder back piece through the slots in the main base and into the slots in the rear base"
   - time: 20.0
     title: Clip in the rear wheel
-    description: "Take the rear caster wheel and clip it up through the centre hole in the rear base piece"
+    description: "Push the rear caster wheel up through the centre hole in the rear base piece so it clips into place"
   - time: 21.8
     title: Slide on the left wheel cover
     description: "Take one of the wheel covers with the 'M' logo cut into it and slide it back so that it clips into the slots on the rear base piece"
@@ -54,7 +54,7 @@ videosteps:
     description: "Slide the crossbrace down so that it clips on the wheel covers and locks the PCB into place. Don't force this part - if it's not going on easily, just make sure all of the parts are well aligned so that one of them isn't catching"
   - time: 34.7
     title: Fit the elastic band to the servo mount
-    description: "Hook one of the elastic bands over the servo mount"
+    description: "Hook one of the elastic bands over the servo mount on the base"
   - time: 37.3
     title: Attach the servo
     description: "Slot the servo in to the servo mount as shown and then clip the elastic band over the top to hold it in place"
