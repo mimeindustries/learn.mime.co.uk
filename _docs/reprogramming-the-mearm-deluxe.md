@@ -3,8 +3,8 @@ title: Reprogramming the MeArm Deluxe
 summary: Here's how to reprogram the Brains Board in you MeArm Deluxe
 layout: doc
 tags:
-  - Building
-  - Configuration
+  - Build
+  - Guide
   - Calibration
   - Programming
   - Arduino

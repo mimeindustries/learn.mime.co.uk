@@ -3,7 +3,8 @@ title: Control your MeArm from Arduino
 summary: Here's where to get your MeArm working with Arduino
 layout: doc
 tags:
-  - Building
+  - Build
+  - Guide
   - Arduino
 hardware: mearm
 type: instruction

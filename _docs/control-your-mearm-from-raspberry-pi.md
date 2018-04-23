@@ -3,7 +3,8 @@ title: Control your MeArm from Raspberry Pi
 summary: Here's where to get your MeArm working with Raspberry Pi
 layout: doc
 tags:
-  - Building
+  - Build
+  - Guide
   - Raspberry Pi
 hardware: mearm
 type: instruction

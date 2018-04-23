@@ -3,7 +3,9 @@ title: Building the MeArm Deluxe Kit
 summary: Here's where to get started building your MeArm
 layout: doc
 tags:
-  - Building
+  - Build
+  - Guide
+  - Arduino
 hardware: mearm
 type: instruction
 level: core

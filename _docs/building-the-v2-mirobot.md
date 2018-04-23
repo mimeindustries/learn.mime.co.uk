@@ -3,8 +3,9 @@ title: Building the v2 Mirobot
 summary: Here's how to build the latest version of Mirobot
 layout: doc
 tags:
-  - Building
-  - Chassis
+  - Build
+  - Guide
+  - Arduino
 hardware: mirobot-v2
 type: instruction
 level: core
