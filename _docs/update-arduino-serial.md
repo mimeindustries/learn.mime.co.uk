@@ -4,12 +4,9 @@ summary: Replace the Arduino firmware at the heart of Mirobot with your own cust
 layout: doc
 tags:
   - Arduino
-  - Updating
   - Firmware
-  - Serial
 type: instruction
 hardware:
-  - mirobot-v1
   - mirobot-v2
 level: intermediate
 ---

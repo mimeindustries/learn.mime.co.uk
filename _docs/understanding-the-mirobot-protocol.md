@@ -4,9 +4,8 @@ summary: Learn how Mirobot communicates under the hood
 layout: doc
 tags:
   - Protocol
-  - JSON
+  - Guide
 hardware:
-  - mirobot-v1
   - mirobot-v2
   - mirobot-v3
 type: documentation

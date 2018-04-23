@@ -1,12 +1,11 @@
 ---
-title: Drawing shapes
+title: Drawing shapes with the Mirobot
 summary: Some challenges for getting started with the first step of drawing some shapes with Mirobot
 layout: doc
 tags:
   - Challenge
   - Drawing
 hardware:
-  - mirobot-v1
   - mirobot-v2
   - mirobot-v3
 type: challenge
