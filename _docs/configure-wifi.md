@@ -9,6 +9,7 @@ tags:
 hardware: mirobot-v1
 type: instruction
 level: core
+frontpage: false
 ---
 
 Mirobot uses WiFi to communicate, which means the first thing you need to do to use it is to set up its WiFi connection. In this article there are a couple of WiFi networks that are being used:

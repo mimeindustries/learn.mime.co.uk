@@ -8,10 +8,9 @@ tags:
   - Drawing
 hardware:
   - mirobot-v1
-  - mirobot-v2
-  - mirobot-v3
 type: instruction
 level: core
+frontpage: false
 ---
 
 Put a pen in the pen arm and hold it in place with the elastic band. If you are using a v1 or v2 you should make sure that the pen arm screws are adjusted so that the tip of the pen is at the centre of the wheels, otherwise you will get bumps at the corners when you turn.

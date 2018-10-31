@@ -9,6 +9,7 @@ tags:
 hardware: mirobot-v1
 type: instruction
 level: core
+frontpage: false
 ---
 
 Download the app

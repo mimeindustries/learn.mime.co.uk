@@ -8,6 +8,7 @@ tags:
 hardware: mirobot-v1
 type: instruction
 level: intermediate
+frontpage: false
 ---
 
 First you'll need to solder the line following addon together, then you'll be able to start Mirobot following lines.
