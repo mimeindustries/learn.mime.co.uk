@@ -3,9 +3,9 @@ title: Learn with Mime Industries
 layout: default
 ---
 
-{% capture tags %}{% for doc in site.docs %}{% for tag in doc.tags %}{{ tag }}|{% endfor %}{% endfor %}{% endcapture %}
+{% capture tags %}{% for doc in site.docs %}{% if doc.frontpage != false %}{% for tag in doc.tags %}{{ tag }}|{% endfor %}{% endif %}{% endfor %}{% endcapture %}
 {% assign taghash = tags | split:'|' | sort | tag_hash %}
-{% capture hws %}{% for doc in site.docs %}{% for hardware in doc.hardware %}{{ hardware }}|{% endfor %}{% endfor %}{% endcapture %}
+{% capture hws %}{% for doc in site.docs %}{% if doc.frontpage != false %}{% for hardware in doc.hardware %}{{ hardware }}|{% endfor %}{% endif %}{% endfor %}{% endcapture %}
 {% assign hwhash = hws | split:'|' | sort | tag_hash %}
 
   <div class="centre">
