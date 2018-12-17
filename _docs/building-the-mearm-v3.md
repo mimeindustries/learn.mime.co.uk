@@ -10,7 +10,7 @@ hardware: mearm
 type: instruction
 level: core
 ---
-![](/assets/docs/building-the-mearm/orange_mearm_pi.png)
+![](/assets/docs/building-the-mearm/orangemearmpi.png)
 
 The MeArm should be fun to build and easy to control. We've spent a lot of time putting together instructions for building and controlling the MeArm. We advise that you work out and test how to control your Servo Motors before constructing your MeArm. It will save you time and frustration, and lessen the chance that your MeArm will just be something cool to sit on your shelf. There are several versions of the MeArm control boards. Links are below which will help you to control your robot and calibrate the all important servo motors.
 
