@@ -3,3 +3,5 @@ _site
 .env
 .asset-cache*
 assets/video_local
+*~
+*.swp
