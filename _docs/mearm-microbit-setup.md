@@ -27,7 +27,7 @@ Your Servo Motors should spring to life as the BBC micro:bit is powered, default
 
 ![](/assets/docs/mearm-microbit-setup/Servoset.png)
 
-This is the calibration of your servo motors completed. Use them as required in the [MeArm build instructions](https://learn.mime.co.uk/docs/building-the-mearm).
+This is the calibration of your servo motors completed. Use them as required in the [MeArm build instructions](https://learn.mime.co.uk/docs/building-the-mearm-v3).
 
 Once your MeArm is complete you can explore our make code blocks, by either dragging and dropping the hex code you've downloaded into the browser at [makecode.microsoft.org](https://makecode.microsoft.org/#editor) or adding our package from [GitHub](https://github.com/MeArm/pxt-microbit-mearm).
 
