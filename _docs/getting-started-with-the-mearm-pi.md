@@ -14,7 +14,7 @@ level: core
 
 To build the MeArm Robot Kit for Raspberry Pi you should first set up your Raspberry Pi and calibrate your servo motors. This guide will help you to do that.
 
-![](/assets/docs/Blue with tone.png)
+![](/assets/docs/getting-started-with-the-mearm-pi/Blue with tone.png)
 
 ## Plug in your MeArm Robot Kit Raspberry Pi Hat
 
