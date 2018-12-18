@@ -14,6 +14,8 @@ level: core
 
 To build the MeArm Robot Kit for Raspberry Pi you should first set up your Raspberry Pi and calibrate your servo motors. This guide will help you to do that.
 
+![](/assets/docs/Blue with tone.png)
+
 ## Plug in your MeArm Robot Kit Raspberry Pi Hat
 
 This is the control board that comes with your MeArm Robot Kit for Raspberry Pi. Push it down onto the "GPIO" pins on the Raspberry Pi, these are the two rows of pins along one edge of the Raspberry Pi. The pins should match up with the socket on the MeArm Raspberry Pi Hat. When powering the Raspberry Pi and Hat please use the USB Power socket on the MeArm Raspberry Pi Hat. This will power the Raspberry Pi too.
@@ -68,7 +70,9 @@ This will bring up the web interface, where you can pick a coding language app. 
 
 ## Setting the Servo Motors
 
-Using the slider controllers, set the Base Servo to 0, the Lower Servo to x, the Upper Servo to y, and the grip servo to z. Once they have moved to position place the servo horns (the black plastic parts that come with the servo motors) on top as shown in the following image.
+Using the slider controllers, set the Base Servo to 0, the Lower Servo to 90, the Upper Servo to 70, and the Grip Servo to 90. Once they have moved to position place the servo horns (the black plastic parts that come with the servo motors) on top as shown in the following image.
+
+![](/assets/docs/getting-started-with-the-mearm-pi/Servoset.png)
 
 ## Build your MeArm Robot Arm
 
