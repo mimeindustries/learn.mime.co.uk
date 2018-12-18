@@ -8,6 +8,7 @@ tags:
 hardware: mirobot-v2
 type: instruction
 level: core
+frontpage: false
 ---
 
 Once you've [built your Mirobot](/docs/building-the-v2-mirobot/) you'll be wanting to start making it draw things. Here are some tips that will help you get the best results.
