@@ -33,6 +33,8 @@ This is where it might start to feel like you are entering the matrix, for some 
 First we will update your system, it may have already been done as you set up the system, so this could be quite quick or take a while. In terminal type:
 
 `sudo apt-get update`
+`sudo apt-get upgrade`
+`sudo apt-get dist-upgrade`
 
 Now we will install some required software.
 
