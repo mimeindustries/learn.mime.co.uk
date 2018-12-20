@@ -36,7 +36,7 @@ First we will update your system, it may have already been done as you set up th
 `sudo apt-get upgrade`
 `sudo apt-get dist-upgrade`
 
-Now we will install some required software.
+Now we will install some required software...
 
 `sudo apt-get install -y git pigpio nodejs npm`
 
