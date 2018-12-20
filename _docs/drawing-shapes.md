@@ -10,6 +10,7 @@ hardware:
   - mirobot-v3
 type: challenge
 level: beginner
+frontpage: false
 ---
 
 You should use the built-in user interface to do these challenges. Think about the points in each challenge and try to do it with as few blocks as possible.
