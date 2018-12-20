@@ -12,7 +12,7 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
 deploy:
-  skip_cleanup: true
+  skip_cleanup: false
   provider: script
   script: bin/travis_deploy
   on:
