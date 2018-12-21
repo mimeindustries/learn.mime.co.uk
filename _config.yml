@@ -11,7 +11,7 @@ exclude:
  - README.md
  - bin
  - vendor
-gems:
+plugins:
  - jekyll-assets
 assets:
   compress:

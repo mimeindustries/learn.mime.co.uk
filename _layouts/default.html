@@ -22,7 +22,9 @@
         <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, user-scalable=no">
         <title>{{ page.title }}</title>
-        {% stylesheet main.css %}
+        {% block stylesheet %}
+	  <link href="/assets/main.css" rel="stylesheet" type="text/css" />
+	{% endblock %}
         {% if page.url == '/' %}
           {% javascript index.js %}
         {% else %}
