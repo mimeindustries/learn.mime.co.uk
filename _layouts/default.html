@@ -22,8 +22,8 @@
         <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, user-scalable=no">
         <title>{{ page.title }}</title>
-        {% stylesheet 'scss' %}
-        {% if page.url == '/' %}
+        <link rel="stylesheet" href="/assets/css/main.css">
+	{% if page.url == '/' %}
           {% javascript index.js %}
         {% else %}
           {% javascript doc.js %}
