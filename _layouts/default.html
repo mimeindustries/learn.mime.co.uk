@@ -22,11 +22,11 @@
         <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, user-scalable=no">
         <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="/assets/css/main.css">
-	{% if page.url == '/' %}
-          {% javascript index.js %}
+        {% asset main.css %}
+        {% if page.url == '/' %}
+          {% asset index.js %}
         {% else %}
-          {% javascript doc.js %}
+          {% asset doc.js %}
         {% endif %}
         {% if page.stylesheets %}
           {% for sheet in page.stylesheets %}
