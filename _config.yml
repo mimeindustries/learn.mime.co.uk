@@ -1,5 +1,5 @@
 # Site settings
-title: Learn Mirobot
+title: Learn Mime
 collections:
   docs:
     output: true
