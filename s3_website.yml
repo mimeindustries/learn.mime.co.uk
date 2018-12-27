@@ -39,8 +39,8 @@ s3_reduced_redundancy: true
 
 concurrency_level: 10
 
-redirects:
-  mearm: "/#hw=mearm-maker|mearm-pi"
+# redirects:
+#   mearm: "/#hw=mearm-maker|mearm-pi"
 
 site: _site
 
