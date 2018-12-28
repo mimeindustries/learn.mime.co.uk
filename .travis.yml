@@ -1,7 +1,7 @@
 language: ruby
 cache: bundler
 rvm:
-- 2.6.0
+- 2.5.0
 script: ./bin/test
 
 git:
