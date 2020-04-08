@@ -7,7 +7,9 @@ tags:
   - Guide
   - Software
   - Raspberry Pi
-hardware: mearm-pi
+hardware:
+  - mearm-v2
+  - mearm-v3
 type: instruction
 level: core
 ---
@@ -18,7 +20,10 @@ To build the MeArm Robot Kit for Raspberry Pi you should first set up your Raspb
 
 ## Plug in your MeArm Robot Kit Raspberry Pi Hat
 
-This is the control board that comes with your MeArm Robot Kit for Raspberry Pi. Push it down onto the "GPIO" pins on the Raspberry Pi, these are the two rows of pins along one edge of the Raspberry Pi. The pins should match up with the socket on the MeArm Raspberry Pi Hat. When powering the Raspberry Pi and Hat please use the USB Power socket on the MeArm Raspberry Pi Hat. This will power the Raspberry Pi too.
+This is the control board that comes with your MeArm Robot Kit for Raspberry Pi. Push it down onto the "GPIO" pins on the Raspberry Pi, these are the two rows of pins along one edge of the Raspberry Pi. The pins should match up with the socket on the MeArm Raspberry Pi Hat.
+Early version of the MeArm Pi had a USB power socket on the MeArm Pi Hat, so the robot and Raspberry Pi could be powered by the same power supply. The most recent versions include a 2.1mm barrel jack connector and a 4 x AA battery pack, and require you to power the Raspberry Pi separately. This solves the rare issue of either the Pi or the MeArm drawing too much power and "browning out" the whole set up, and also helps future proof the MeArm Pi.
+This also means you can switch off the MeArm without switching off the Raspberry Pi, since there is a switch on the battery pack. Ensure this is switched on when you want to run the MeArm!
+If you like you can power use an external 6V 2A+ power supply instead of batteries.
 
 ## Set up your Raspberry Pi
 
@@ -38,13 +43,17 @@ First we will update your system, it may have already been done as you set up th
 
 `sudo apt-get dist-upgrade`
 
+Update the npm version (this is an issue on the current Pi4).
+
+`curl https://www.npmjs.com/install.sh | sudo sh`
+
 Now we will install some required software...
 
-`sudo apt-get install -y git pigpio nodejs npm`
+`sudo apt-get install -y pigpio python-pigpio python3-pigpio`
 
 Install the MeArm software.
 
-`git clone http://github.com/mimeindustries/mearm-js.git`
+`git clone http://github.com/mearm/mearm-js.git`
 
 Move into the mearm repository
 
@@ -70,7 +79,7 @@ Using the Joysticks you should be able control the servo motors manually.
 
 Now open web browser on your raspberry pi and go to "http://localhost:80"
 
-This will bring up the web interface, where you can pick a coding language app.  Once you've clicked through, click on the wifi logo and place the address "http://localhost:80" into the pop up box. Now you should be able to control the servo motors with the selected app, and use the sliders at the top to be able to set the positions of the servo motors.
+This will bring up the web interface, where you can pick a coding language app.  Once you've clicked through, click on the wifi logo and place the address "localhost" into the pop up box. Now you should be able to control the servo motors with the selected app, and use the sliders at the top to be able to set the positions of the servo motors.
 
 ## Setting the Servo Motors
 
@@ -80,4 +89,4 @@ Using the slider controllers, set the Base Servo to 0, the Lower Servo to 90, th
 
 ## Build your MeArm Robot Arm
 
-Once calibrated, disconnect the servo motors and MeArm Base Board and follow the build instructions for your [model of the MeArm](https://learn.mime.co.uk).
+Once calibrated, disconnect the servo motors and MeArm Base Board and follow the build instructions for your [model of the MeArm](https://learn.mearm.com).
