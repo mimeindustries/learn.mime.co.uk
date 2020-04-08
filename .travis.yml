@@ -1,5 +1,6 @@
 language: ruby
 cache: bundler
+jdk: openjdk8
 rvm:
 - 2.5.3
 script: ./bin/test
