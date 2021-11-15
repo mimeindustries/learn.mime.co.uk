@@ -11,6 +11,14 @@ type: troubleshooting
 level: core
 ---
 
+General Problems
+---------------------------
+
+### Losing Connection
+When first setting up your Mirobot you might find your PC leaves the Mirobot network in favour of another local network with internet connectivity. To prevent this simply uncheck the "Connect Automatically" option whilst working on your Mirobot.
+
+Updating to the latest firmware can also solve many minor connection issues.
+
 v2 Hardware Troubleshooting
 ---------------------------
 
