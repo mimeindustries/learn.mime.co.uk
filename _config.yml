@@ -7,18 +7,11 @@ collections:
 exclude:
  - Gemfile
  - Gemfile.lock
- - s3_website.yml
  - README.md
  - bin
  - vendor
-plugins:
- - jekyll-assets
-assets:
-  compress:
-    css: false
-    js: false
-  prefix: "/assets"
-  digest: true
-  sources:
-    - _assets/js
-    - _assets/css
+ - "*~"
+sass:
+  style: expanded
+  silence_deprecations:
+    - import

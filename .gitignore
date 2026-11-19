@@ -5,3 +5,6 @@ _site
 assets/video_local
 *~
 *.swp
+.jekyll-cache
+.bundle
+vendor

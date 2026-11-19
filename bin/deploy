@@ -1,4 +1,30 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Build the site and upload it to S3.
+# Needs AWS credentials in the environment (AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY
+# or an AWS profile). Set CF_ZONE_ID, CF_EMAIL and CF_APIKEY to also purge Cloudflare.
+set -euo pipefail
+export LANG="${LANG:-C.UTF-8}"
 
-bundle exec jekyll build
-bundle exec s3_website push
+BUCKET="s3://learn.mime.co.uk"
+REGION="us-east-2"
+SYNC_OPTS=(--region "$REGION" --storage-class REDUCED_REDUNDANCY --no-progress)
+
+rm -rf ./_site
+JEKYLL_ENV=production bundle exec jekyll build
+
+# Assets: cache for 4 weeks
+aws s3 sync ./_site/assets "$BUCKET/assets" "${SYNC_OPTS[@]}" --delete \
+  --cache-control "max-age=2419200"
+
+# Everything else: cache for 30 minutes
+aws s3 sync ./_site "$BUCKET" "${SYNC_OPTS[@]}" --delete \
+  --exclude "assets/*" \
+  --cache-control "max-age=1800"
+
+if [[ -n "${CF_APIKEY:-}" ]]; then
+  curl -fsS -X POST "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID:-9592fa56592ef5913c7791ad2fafee78}/purge_cache" \
+    -H "X-Auth-Email: $CF_EMAIL" \
+    -H "X-Auth-Key: $CF_APIKEY" \
+    -H "Content-Type: application/json" \
+    --data '{"purge_everything":true}'
+fi

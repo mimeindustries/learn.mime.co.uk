@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
-gem 's3_website'
-gem 'jekyll-assets'
-gem 'uglifier'
-gem 'jekyll-paginate'
-gem 'html-proofer'
+gem 'jekyll', '~> 4.4'
+
+group :test do
+  gem 'html-proofer', '~> 5.0'
+end

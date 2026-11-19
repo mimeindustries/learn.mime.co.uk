@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 set -e # halt script on error
+export LANG="${LANG:-C.UTF-8}"
 
-bundle exec jekyll build
-bundle exec htmlproofer ./_site --alt-ignore "/.*/" --disable-external --allow-hash-href --url-ignore "/#.*=.*/"
+JEKYLL_ENV=production bundle exec jekyll build
+bundle exec htmlproofer ./_site \
+  --ignore-missing-alt \
+  --disable-external \
+  --no-enforce-https \
+  --allow-hash-href \
+  --ignore-urls "/#.*=.*/"

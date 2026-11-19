@@ -1,0 +1,34 @@
+name: Build and deploy
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - run: ./bin/test
+
+  deploy:
+    needs: test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - run: ./bin/deploy
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.S3ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.S3SECRET }}
+          CF_EMAIL: ${{ secrets.CF_EMAIL }}
+          CF_APIKEY: ${{ secrets.CF_APIKEY }}

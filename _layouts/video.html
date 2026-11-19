@@ -64,7 +64,7 @@ layout: doc
       {% endfor %}
   </div>
 </div>
-{% asset videoInstruction.js %}
+<script src="/assets/js/videoInstruction.js?v={{ site.time | date: "%s" }}"></script>
 <script>
 window.addEventListener('load', function(){
   var v = new videoInstruction({

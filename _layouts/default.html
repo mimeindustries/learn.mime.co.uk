@@ -22,11 +22,11 @@
         <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, user-scalable=no">
         <title>{{ page.title }}</title>
-        {% asset main.css %}
+        <link rel="stylesheet" href="/assets/css/main.css?v={{ site.time | date: "%s" }}">
         {% if page.url == '/' %}
-          {% asset index.js %}
+          <script src="/assets/js/index.js?v={{ site.time | date: "%s" }}"></script>
         {% else %}
-          {% asset doc.js %}
+          <script src="/assets/js/doc.js?v={{ site.time | date: "%s" }}"></script>
         {% endif %}
         {% if page.stylesheets %}
           {% for sheet in page.stylesheets %}
@@ -37,27 +37,27 @@
     <body{% if page.url == "/" %} id="home"{% endif %}{% if page.bodyclass %} class="{{page.bodyclass}}"{% endif %}>
       <header>
         <div class="menu">
-          <h1 class="title"><a href="//mime.co.uk"><img src="/assets/logo.svg" alt="Mime Industries" /></a></h1>
+          <h1 class="title"><a href="https://mime.co.uk"><img src="/assets/logo.svg" alt="Mime Industries" /></a></h1>
           <ul>
-            <li><a class="products" href="//mime.co.uk/products/">Products</a></li>
-            <li><a href="//mime.co.uk/education/">Education</a></li>
-            <li><a href="//learn.mime.co.uk/">Build</a></li>
+            <li><a class="products" href="https://mime.co.uk/products/">Products</a></li>
+            <li><a href="https://mime.co.uk/education/">Education</a></li>
+            <li><a href="https://learn.mime.co.uk/">Build</a></li>
             <li><a href="https://shop.mime.co.uk/" class="button">Buy</a></li>
           </ul>
         </div>
         <div id="productsDropdown">
           <div class="productMenu">
-            <a href="//mime.co.uk/products/mearm-pi/">
+            <a href="https://mime.co.uk/products/mearm-pi/">
               <img src="/assets/img/mearmPiDropdown.jpg" /><div><strong>MeArm Pi</strong><p>The Robot Arm for Raspberry Pi</p></div>
             </a>
           </div>
           <div class="productMenu">
-            <a href="//mime.co.uk/products/mearm-maker/">
+            <a href="https://mime.co.uk/products/mearm-maker/">
               <img src="/assets/img/mearmMakerDropdown.jpg" /><div><strong>MeArm Maker</strong><p>Bring your own controller!</p></div>
             </a>
           </div>
           <div class="productMenu">
-            <a href="//mime.co.uk/products/mirobot/">
+            <a href="https://mime.co.uk/products/mirobot/">
               <img src="/assets/img/mirobotDropdown.jpg" /><div><strong>Mirobot</strong><p>The WiFi Drawing Robot for Kids</p></div>
             </a>
           </div>
